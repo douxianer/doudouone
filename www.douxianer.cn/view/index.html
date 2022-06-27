@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	    <meta name="keywords" content="豆馅儿，豆馅儿2333，我曾经见过你，一夜等天际白，我栖息的夏天">
+	    
+	     
+	    <meta name="baidu-site-verification" content="code-9mggO8RlJA" />
+		<meta charset="utf-8">
+		<title>我曾经见过你</title>
+		<link href="../css/index.css" type="text/css" rel="stylesheet" />
+		
+		<script src="./js/index.js"></script>
+		
+		
+	</head>
+	<body>
+		<div class="top_be">
+		<div class="top">
+			<div class="top_image">
+				<img class="top_image-image" src="./image/logo.png" />
+			</div>
+			
+			<?php foreach($class1_list as $classword) :?>
+			<a  href="./index.php?class2_before=<?php echo $classword['class_id']; ?>" class="top_text"   ><?php echo $classword['class_name']; ?> </a>
+			<?php endForeach; ?>
+			
+			
+			<div class="top_texts">鸣唱的诗篇∨</div>
+		</div>
+		</div>
+		
+		
+		
+		<div class="content_be">
+		<div class="content">
+			<div class="backgrounds">
+				<img class="back_image" src="./image/background1.png" />
+			</div>
+			<div class="nav_be">
+			<div class="con_nav">
+				我曾背负世人谎，血衣大杀过四方
+			</div>
+			</div>
+			<div class="con_text">我曾经见过你</div>
+			<div class="search_be">
+			<input  class="con_search"/>
+				 
+				<img class="search_icon" src="./image/ui_search.png" />
+			
+			</div>
+			<div class="con_head">
+				<img   class="head_image"  src="./image/head.jpeg" />
+			</div>
+			
+			
+			
+			<div class="con_center">
+				<div class="con_left">
+					
+					<?php foreach($class2_list as $classword2) :?>
+					<div class="left_item">
+			<a  href="index.php?blog_before=<?php echo $classword2['class_id']; ?>&class2_before1=<?php echo $classword2['class_pid']; ?>" class="left_itemss"   ><?php echo $classword2['class_name']; ?> </a></div>
+			<?php endForeach; ?>
+					
+					
+					
+					
+				</div>
+				
+				<div class="con_cen_center">
+					<div class="upload_content">
+						<input value="  岁月青绫两相忘，山水红尘一闲人 " readonly="readonly" class="upload_input"/>
+						<a class="upload_but" href="./view/uploadc.php">+</a>
+					</div>
+					
+					<div class="blog_content">
+
+
+					
+
+						
+
+						<?php foreach($blog_content_list as $blog_content_item) :?>
+						<a href="view/articldetial.php?id=<?php echo $blog_content_item['art_id']; ?>" class="blog_item">
+							<div class="blog_item_title"><?php echo $blog_content_item['title']; ?> </div>
+							<div class="blog_item_content"><?php echo $blog_content_item['art_desc']; ?> 
+								</div>
+							<div class="blog_item_time"><?php echo $blog_content_item['addtime']; ?> </div>
+						</a>
+						<?php endForeach; ?>
+						
+
+
+
+
+
+
+
+
+
+						<a id="page_btn" class="<?php echo $blog_page==1?'page_action':''; ?>" href="index.php?blog_before=<?php echo $blog_content_list[0][cate_id]; ?>&class2_before1=<?php echo $classword2['class_pid']; ?>&page=1"> 首页</a>
+						<a id="page_btn"class="<?php echo $blog_page==1?'page_action':''; ?>"  href="index.php?blog_before=<?php echo $blog_content_list[0][cate_id]; ?>&class2_before1=<?php echo $classword2['class_pid']; ?>&page=<?php echo $pre_page; ?>">上一页</a>
+						<a id="page_btn"class="<?php echo $blog_page==$psge_count?'page_action':''; ?>" href="index.php?blog_before=<?php echo $blog_content_list[0][cate_id]; ?>&class2_before1=<?php echo $classword2['class_pid']; ?>&page=<?php echo $next_page; ?>">下一页</a>
+						<a id="page_btn"class="<?php echo $blog_page==$psge_count?'page_action':''; ?>"href="index.php?blog_before=<?php echo $blog_content_list[0][cate_id]; ?>&class2_before1=<?php echo $classword2['class_pid']; ?>&page=<?php echo $psge_count; ?>">尾页</a>
+					    <form class="page_input" method="get" action="index.php?blog_before=<?php echo $blog_content_list[0][cate_id]; ?>&class2_before1=<?php echo $classword2['class_pid']; ?>">
+							<div class="page_con"><?php echo $blog_page; ?>/<?php echo $psge_count; ?></div>
+							<input  oninput="if(value<1)value=1;if(value > <?php echo $psge_count; ?> )value=<?php echo $psge_count; ?>" type="text" name="page"/>
+							<input class="page_button" type="submit" value="跳转"/>
+						</form>
+						
+						
+					</div>
+				</div>
+				<div class="con_right">
+					
+				</div>
+			</div>
+		</div>
+		</div>
+		
+		<div class="footer">
+			<hr width="90%" />
+			<a class="foot_btn" href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022009165号-1</a>
+			
+			<div style="width:300px;margin:0 auto; padding:20px 0;">
+				<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41020202000124" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+					<img src="./image/备案图标.png" style="float:left;"/><p class="foot_btn" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">豫公网安备 41020202000124号</p></a>
+			</div>
+		 
+		</div>
+		
+	</body>
+</html>

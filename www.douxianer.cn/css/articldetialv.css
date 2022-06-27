@@ -1,0 +1,162 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	text-align: center;
+	background:#F2F2F2 ;
+}
+div{
+	width: 980px;
+	margin: 5px auto;
+	margin-top: 0;
+	background: #F2F2F2 ;
+}
+img{
+  max-width: 100%;
+ object-fit: scale-down;
+}
+table{
+  max-width: 100%;
+ object-fit: scale-down;
+}
+.top_be{
+	z-index: 1;
+	position: fixed;
+	
+	background:#0F1A33 ;
+	height: 40px;
+	width: 100%;
+	
+}
+.top{
+	background:#0F1A33 ;
+	height: 40px;
+}
+.top_image{
+	background:#0F1A33 ;
+	height: 35px;
+	width: 40px;
+	float: left;
+	margin-right: 50px;
+	
+}
+.top_image-image{
+	height: 33px;
+	width: 35px;
+	padding-top: 5px;
+}
+.top_text{
+	text-decoration:none;
+	background:#0F1A33 ;
+	height: 30px;
+	width: 160px;
+	float: left;
+	color: white;
+	font-family: "华文新魏";
+	font-size: 20px;
+	padding-top: 10px;
+	
+
+}
+.top_texts{
+	
+	background:#0F1A33 ;
+	float: right;
+	color: white;
+	height: 30px;
+	width: 120px;
+	font-family: "华文新魏";
+	font-size: 20px;
+	padding-top: 10px;
+	
+}
+
+.background_blogbe{
+	height: 100px;
+}
+.blog_background{
+	
+	padding-top:40px ;
+	padding-bottom: 40px;
+	width: 60%;
+	height: auto;
+	background: white;
+	
+}
+.blog_title{
+	background-color: transparent;
+	width: auto;
+	text-align: left;
+	
+	word-wrap:break-word;
+font-weight: bold;
+
+
+font-size: 35px;
+padding-left: 30px;
+	padding-right: 30px;
+	font-family: "宋体";
+	font-weight: 900;
+	text-indent: 15px;
+	
+}
+.blog_content{
+	margin-top: 40px;
+	background-color: transparent;
+	width: auto;
+	text-align: left;
+	font-size: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	color: gray;
+	
+}
+.blog_addtime{
+	background-color: transparent;
+	font-size: 15px;
+	width: auto;
+	text-align: left;
+	margin-top: 40px;
+	padding-left: 40px;
+	color: grey;
+	
+}
+.blog_hits{
+	background-color: transparent;
+	
+	
+}
+
+.blog_desc{
+	font-size: 15px;
+	background-color: transparent;
+	text-align: left;
+	font-family: "华文仿宋";
+	padding-right: 50px;
+	word-wrap:break-word;
+	width: 80%;
+	font-weight: 550;
+	padding-top: 30px;
+}
+.footer{
+	margin-top: 50px;
+	width: 100%;
+	float: left;
+	
+}
+.foot_btn{
+	display: block;
+	font-size: 16px;
+	color: gray;
+	text-decoration: none;
+	margin-bottom: -20px;
+}
+
+
+.page_action{
+	display: none;
+}
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title><?php echo $blog_content_list[0]['title']; ?></title>
+	<meta charset="utf-8">
+    <link href="../css/articldetialv.css" type="text/css" rel="stylesheet" />
+    <script src="../js/articldetialv.js"></script>
+    
+</head>
+<body>
+    <div class="top_be">
+		<div class="top">
+			<div class="top_image">
+				<img class="top_image-image" src="../image/logo.png" />
+			</div>
+			
+			<?php foreach($class1_list as $classword) :?>
+			<a  href="../index.php?class2_before=<?php echo $classword['class_id']; ?>" class="top_text"   ><?php echo $classword['class_name']; ?> </a>
+			<?php endForeach; ?>
+			
+			
+			<div class="top_texts">鸣唱的诗篇∨</div>
+		</div>
+		</div>
+		<div class="background_blogbe"></div>
+		
+		<div class="blog_background">
+			
+		<div class="blog_title"><?php echo $blog_content_list[0]['title']; ?></div>
+		<div class="blog_desc"><?php echo $blog_content_list[0]['art_desc']; ?> </div>
+		<div class="blog_content"><?php echo $blog_content_list[0]['content']; ?>
+		</div>
+		<div class="blog_hits"></div>
+		<div class="blog_addtime"><?php echo $blog_content_list[0]['addtime']; ?></div>
+		</div>
+	
+		
+	
+	</table>
+
+
+
+
+	<div class="footer">
+		<hr width="90%" />
+		<a class="foot_btn" href="https://beian.miit.gov.cn/" target="_blank">鲁ICP备2022009165号-1</a>
+		
+		<div style="width:300px;margin:0 auto; padding:20px 0;">
+			<a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=41020202000124" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;">
+				<img src="../image/备案图标.png" style="float:left;"/><p class="foot_btn" style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">豫公网安备 41020202000124号</p></a>
+		</div>
+	 
+	</div>
+</body>
+</html>
